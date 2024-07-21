@@ -7,6 +7,7 @@ let total = document.getElementById("total");
 let fade1 = document.getElementById(`fade1`);
 let fad2 = document.getElementById(`fade2`);
 let fad3 = document.getElementById(`fade3`);
+
  fade1.style.opacity= "10%"
  fade2.style.opacity= "10%"
  fade3.style.opacity= "10%"
@@ -16,7 +17,7 @@ function add(ind) {
     let qty  = document.getElementById(`qty${ind}`)
     let fade = document.getElementById(`fade${ind}`)
     qty.innerText = parseInt(qty.innerText) + 1
-    fade.style.opacity= "100%"
+    fade.style.opacity = "100%"
     updateTotal();
 }
 
@@ -48,3 +49,39 @@ function swim(id) {
     document.getElementById(`heart${id}`).style.color = "red";
   }
 }
+
+
+
+  document.querySelectorAll(".fa-trash-alt").forEach(button => {
+    button.addEventListener("click", () => {
+      let qty1  = document.getElementById('qty1')
+      let qty2  = document.getElementById('qty2')
+      let qty3 = document.getElementById('qty3')
+
+      if (parseInt(qty1.innerText) > 1) {
+      qty1.innerText ='1';
+      fade1.style.opacity= "10%"
+        
+
+      }else if(parseInt(qty2.innerText) > 1){
+
+        qty2.innerText = '1'
+        fade2.style.opacity= "10%"
+       
+      }else if(parseInt(qty3.innerText)>1){
+        
+        qty3.innerText = '1'
+         fade3.style.opacity= "10%"
+      }
+
+
+      updateTotal();
+    });
+  });
+  
+  // const cardBody = button.closest(".card-body");
+  // cardBody.parentElement.removeChild(cardBody);
+    // let qty = document.getElementById(`qty${ind}`);
+    // if(qty === `qty${ind}`)
+    // qty.innerText = parseInt(qty.innerText) = 1;
+    // updateTotal();
