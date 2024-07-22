@@ -49,32 +49,41 @@ function swim(id) {
 
 
 
-  document.querySelectorAll(".fa-trash-alt").forEach(button => {
-    button.addEventListener("click", () => {
-      let qty1  = document.getElementById('qty1')
-      let qty2  = document.getElementById('qty2')
-      let qty3  = document.getElementById('qty3')
+document.querySelectorAll(".fa-trash-alt").forEach(button => {
+  button.addEventListener("click", () => {
+    
+    const cardBody = button.closest(".dell");
+    cardBody.parentElement.removeChild(cardBody);
 
-      if (parseInt(qty1.innerText) > 1) {
-      qty1.innerText ='1';
-      fade1.style.opacity= "10%"
+});
+});
+
+  // document.querySelectorAll(".fa-trash-alt").forEach(button => {
+  //   button.addEventListener("click", () => {
+  //     let qty1  = document.getElementById('qty1')
+  //     let qty2  = document.getElementById('qty2')
+  //     let qty3  = document.getElementById('qty3')
+
+  //     if (parseInt(qty1.innerText) > 1) {
+  //     qty1.innerText ='1';
+  //     fade1.style.opacity= "10%"
         
 
-      }else if(parseInt(qty2.innerText) > 1){
+  //     }else if(parseInt(qty2.innerText) > 1){
 
-        qty2.innerText = '1'
-        fade2.style.opacity= "10%"
+  //       qty2.innerText = '1'
+  //       fade2.style.opacity= "10%"
        
-      }else if(parseInt(qty3.innerText)>1){
+  //     }else if(parseInt(qty3.innerText)>1){
         
-        qty3.innerText = '1'
-         fade3.style.opacity= "10%"
-      }
+  //       qty3.innerText = '1'
+  //        fade3.style.opacity= "10%"
+  //     }
 
 
-      updateTotal();
-    });
-  });
+  //     updateTotal();
+  //   });
+  // });
   
   // const cardBody = button.closest(".card-body");
   // cardBody.parentElement.removeChild(cardBody);

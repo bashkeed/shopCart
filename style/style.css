@@ -68,6 +68,10 @@ main {
 }
 
 
+#fade1, #fade2,#fade3{
+  opacity: 40%;
+}
+
 
 
 
