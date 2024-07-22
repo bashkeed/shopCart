@@ -53,7 +53,7 @@ function swim(id) {
     button.addEventListener("click", () => {
       let qty1  = document.getElementById('qty1')
       let qty2  = document.getElementById('qty2')
-      let qty3 = document.getElementById('qty3')
+      let qty3  = document.getElementById('qty3')
 
       if (parseInt(qty1.innerText) > 1) {
       qty1.innerText ='1';
