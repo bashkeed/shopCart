@@ -5,12 +5,9 @@ let qty3 = document.getElementById("qty3");
 let total = document.getElementById("total");
 
 let fade1 = document.getElementById(`fade1`);
-let fad2 = document.getElementById(`fade2`);
-let fad3 = document.getElementById(`fade3`);
+let fade2 = document.getElementById(`fade2`);
+let fade3 = document.getElementById(`fade3`);
 
- fade1.style.opacity= "10%"
- fade2.style.opacity= "10%"
- fade3.style.opacity= "10%"
 
 
 function add(ind) {
