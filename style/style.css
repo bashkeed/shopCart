@@ -66,6 +66,9 @@ main {
 .fa-trash-alt {
   color: #de6b5c;
 }
+.fade1,.fade2,.fade3{
+  opacity:40%;
+}
 
 
 #fade1, #fade2,#fade3{
